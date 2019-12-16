@@ -16,6 +16,12 @@ h1 {
 img {
   max-width: 100%;
 }
+p {
+  margin-top: 0;
+}
+p + p {
+  margin-top: 1em;
+}
 
 header {
   position: relative;
@@ -44,9 +50,44 @@ h1 {
 h2 {
   font-family: 'Libre Baskerville', serif;
 }
+@media (min-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+  header {
+    padding: 4rem 3rem 0 3rem;
+    margin-bottom: 10rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 1150px) {
+  body {
+    font-size: 24px;
+  }
+  header {
+    margin-bottom: 14rem;
+  }
+  h1 {
+    font-size: 9rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
 
 main {
   padding: 0 2rem;
+}
+@media (min-width: 900px) {
+  main {
+    padding: 0 3rem;
+    max-width: 80rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 3rem;
+  }
 }
 
 figure {
@@ -87,4 +128,15 @@ figcaption {
   font-size: 1.5rem;
   color: #fff;
   z-index: 1;
+}
+
+@media (min-width: 900px) {
+  header:after {
+    transform: skewY(-4deg);
+  }
+}
+@media (min-width: 1200px) {
+  header:after {
+    transform: skewY(-3deg);
+  }
 }
