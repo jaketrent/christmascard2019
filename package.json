@@ -1,0 +1,15 @@
+{
+  "name": "trentchristmascard2019",
+  "version": "1.0.0",
+  "description": "fam christmas card",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server ."
+  },
+  "keywords": [],
+  "author": "jaketrent",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
